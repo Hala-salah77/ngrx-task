@@ -1,0 +1,12 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="flex gap-2">
+  <input
+    type="text"
+    formControlName="title"
+    placeholder="New task..."
+    class="flex-1 border p-2 rounded-xl"
+  />
+
+  <button type="submit" class="bg-blue-600 text-white px-4 rounded-xl" [disabled]="form.invalid">
+    Add
+  </button>
+</form>
